@@ -26,6 +26,6 @@ export function parseCSV(text){
     i++;
   }
   if(cur.length>0 || row.length>0){ pushCell(row); pushRow(row); }
-  if(rows.length && rows[rows.length-1].every(x=>x==="" )) rows.pop();
+  if(rows.length && rows[rows.length-1].every(x=>x==="")) rows.pop();
   return rows;
 }
